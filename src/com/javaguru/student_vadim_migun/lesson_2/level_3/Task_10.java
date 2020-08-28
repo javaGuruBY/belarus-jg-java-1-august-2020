@@ -13,6 +13,7 @@ Perimeter is = 47.12388980384689
 Area is = 176.71458676442586
  */
 
+
 import java.awt.geom.PathIterator;
 import java.util.Scanner;
 
@@ -22,10 +23,10 @@ class Task_10 {
 
     public static void main (String [] args){
 
-
-        System.out.println("Input radius circle");
+        System.out.println("Input radius circle: ");
 
         Scanner scan = new Scanner(System.in);
+
         double radius = scan.nextDouble();
 
         System.out.println("Radius circle = " + radius);
