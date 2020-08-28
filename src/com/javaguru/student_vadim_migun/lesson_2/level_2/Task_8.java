@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson2.level2;
+package com.javaguru.student_vadim_migun.lesson_2.level_2;
 
 /*
 Написать консольную программу, которая запрашивает
@@ -8,7 +8,7 @@ Hello имя пользователя!
 
 import java.util.Scanner;
 
-public class Task8 {
+public class Task_8 {
 
     public static void main (String [] args) {
 

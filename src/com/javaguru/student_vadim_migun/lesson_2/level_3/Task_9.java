@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson2.level3;
+package com.javaguru.student_vadim_migun.lesson_2.level_3;
 
 /*
 Напишите программу, которая запрашивает у пользователя целое число
@@ -17,7 +17,7 @@ Expected Output :
 
 import java.util.Scanner;
 
-public class Task9
+public class Task_9
 {
     public static void main(String[] args)
     {

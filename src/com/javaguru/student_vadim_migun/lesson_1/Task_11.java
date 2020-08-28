@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson1;
+package com.javaguru.student_vadim_migun.lesson_1;
 
 /*
 Write a Java program to print the sum of two numbers.

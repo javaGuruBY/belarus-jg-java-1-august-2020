@@ -1,8 +1,8 @@
-package com.javaguru.student_vadim_migun.lesson2.level1;
+package com.javaguru.student_vadim_migun.lesson_2.level_1;
 
 import java.util.Scanner;
 
-class Task1 {
+class Task_1 {
 
     public static void main(String [] args) {
 
