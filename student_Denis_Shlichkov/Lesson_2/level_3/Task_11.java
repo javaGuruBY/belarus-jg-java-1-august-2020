@@ -1,4 +1,4 @@
-package com.javaguru.student_Denis_Shlichkov.Lesson_2.level_3;
+package Lesson_2.level_3;
 
 import java.util.Scanner;
 

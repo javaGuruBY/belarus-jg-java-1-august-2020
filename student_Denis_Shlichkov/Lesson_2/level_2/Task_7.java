@@ -1,4 +1,4 @@
-package com.javaguru.student_Denis_Shlichkov.Lesson_2.level_2;
+package Lesson_2.level_2;
 
 public class Task_7 {
     public static void main(String[] args) {
