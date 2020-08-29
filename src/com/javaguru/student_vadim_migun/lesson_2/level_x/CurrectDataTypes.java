@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.level_x;
+package com.javaguru.student_vadim_migun.lesson_2.level_x;
 
 /*
 Исправьте ошибки компиляции в данной программе.

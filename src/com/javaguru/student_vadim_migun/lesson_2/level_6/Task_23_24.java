@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.level_6;
+package com.javaguru.student_vadim_migun.lesson_2.level_6;
 
 /*
 Заставьте эту программу работать!
