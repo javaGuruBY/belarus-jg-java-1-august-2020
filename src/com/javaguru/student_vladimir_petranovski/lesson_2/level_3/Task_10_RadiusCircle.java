@@ -1,4 +1,4 @@
-package com.javaguru.student_vladimir_petranovski.level_2.level_3;
+package com.javaguru.student_vladimir_petranovski.lesson_2.level_3;
 
 import java.util.Locale;
 import java.util.Scanner;

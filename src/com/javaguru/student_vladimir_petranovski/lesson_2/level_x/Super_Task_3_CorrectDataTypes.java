@@ -1,4 +1,4 @@
-package com.javaguru.student_vladimir_petranovski.level_2.level_x;
+package com.javaguru.student_vladimir_petranovski.lesson_2.level_x;
 
 public class Super_Task_3_CorrectDataTypes {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.javaguru.student_vladimir_petranovski.level_2.level_5;
+package com.javaguru.student_vladimir_petranovski.lesson_2.level_5;
 
 public class TextPrint {
     public static void main(String[] args) {
