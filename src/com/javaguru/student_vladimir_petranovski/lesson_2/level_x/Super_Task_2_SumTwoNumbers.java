@@ -2,9 +2,9 @@ package com.javaguru.student_vladimir_petranovski.lesson_2.level_x;
 
 public class Super_Task_2_SumTwoNumbers {
     public static void main(String[] args) {
-
-        int numberOne;
-        int numberTwo;
+                        //Хорошая практика присваивать значение вместе с инициализацией.
+        int numberOne; //int numberOne = 10;
+        int numberTwo; //int numberTwo = 20;
         numberOne = 10;
         numberTwo = 20;
 
