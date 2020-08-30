@@ -3,4 +3,4 @@ BankAccount;
 SystemUnit;
 LoginService;
 BankTransaction;
-Task_1;
+Task_1; //TaskOne лучше так, CammelCase, название классов с большой буквы каждое следующее слово тоже с большой. Вместо цифр лучше словами. Подчеркивания лучше не писать.
