@@ -14,6 +14,6 @@ task1
 Book
 BankAccount
 SystemUnit
-Login_Service
+Login_Service //Название класса принято писать с большой буквы в стиле CammelCase, без подчеркиваний между слов.
 BankTransaction
 Task1
