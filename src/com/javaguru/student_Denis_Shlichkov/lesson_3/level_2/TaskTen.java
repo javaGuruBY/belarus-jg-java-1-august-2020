@@ -18,7 +18,7 @@ package lesson_3.level_2;
 
 public class TaskTen {
     /*
-    https://javastudy.ru/interview/strings/
-    http://proglang.su/java/strings-length
+    https://javastudy.ru/interview/strings/ - ответ на все вопросы, кроме длины строки
+    http://proglang.su/java/strings-length - ответ про длину строки
      */
 }
