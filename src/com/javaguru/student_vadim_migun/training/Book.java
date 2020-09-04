@@ -6,6 +6,7 @@ public class Book {
     int pageCount;
     boolean opened;
 
+
     void open() {
         opened = true;
     }
