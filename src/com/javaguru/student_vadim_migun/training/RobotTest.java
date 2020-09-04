@@ -1,7 +1,6 @@
 package com.javaguru.student_vadim_migun.training;
 
 
-
 class RobotTest {
 
         public void sayHello () {
