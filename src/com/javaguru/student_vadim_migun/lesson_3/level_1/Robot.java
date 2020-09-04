@@ -15,8 +15,11 @@ package com.javaguru.student_vadim_migun.lesson_3.level_1;
 
  class Robot {
 
+     private String name;
+
      public Robot () {
      }
+
 
     public void sayHello() {
         System.out.println("Hello!");
