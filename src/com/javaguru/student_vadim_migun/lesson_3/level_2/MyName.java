@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_3.level_2;
 
+// Task_7 - Task_8
+
 /*
 Учимся работать со строками.
 
@@ -13,6 +15,6 @@ package com.javaguru.student_vadim_migun.lesson_3.level_2;
 class MyName {
     public static void main(String[] args) {
         String myName = "Vadim";
-        System.out.println(myName);
+        System.out.println("Hi " + myName);
     }
 }
