@@ -14,4 +14,5 @@
 package lesson_3.level_1;
 
 public class TaskThree {
+    //Выполнено
 }
