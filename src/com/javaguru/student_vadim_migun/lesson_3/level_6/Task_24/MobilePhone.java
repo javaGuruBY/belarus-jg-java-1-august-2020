@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.level_6;
+package com.javaguru.student_vadim_migun.lesson_3.level_6.Task_24;
 /*
 Выберите два разных объекта из реального мира.
 Для каждого объекта выделите 2 - 3 самых важных
