@@ -36,6 +36,7 @@ class Phone {
     }
 
     public String getModel() {
+
         return this.model;
     }
 
