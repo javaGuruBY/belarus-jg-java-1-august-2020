@@ -9,16 +9,6 @@ Demo класс для каждого описанного вами объект
 и продемонстрируйте работу с объектом.
  */
 
-class DemoMobilePhone{
-    public static void main(String[] args) {
-        MobilePhone myPhone = new MobilePhone();
-        myPhone.myPhone ("Xiaomi", 293578851, 200);
-    }
-
-}
-
-
-
 class MobilePhone {
     private String model;
     private int number;
@@ -32,7 +22,12 @@ class MobilePhone {
         System.out.println("Model: " + this.model);
         System.out.println("Call: " + this.number);
         System.out.println("Price: " + this.price);
-
     }
+}
 
+class MobilePhoneDemo {
+    public static void main(String[] args) {
+        MobilePhone myPhone = new MobilePhone();
+        myPhone.myPhone ("Xiaomi", 293578851, 200);
+    }
 }
