@@ -11,9 +11,9 @@ class SuperTask_5 {
 
     public static void main (String [] args) {
 
-        Scanner scan = new Scanner(System.in);  //команда ввода данных с клавиатуры
+        Scanner scan = new Scanner(System.in);  // команда ввода данных с клавиатуры
 
-        System.out.println("Input first number: ");
+        System.out.println("Input first number: "); // вывод сообщения на консоль
         int firstNumber = scan.nextInt();
         System.out.println("First number = " + firstNumber);
 
