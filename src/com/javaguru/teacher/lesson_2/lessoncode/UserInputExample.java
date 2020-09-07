@@ -2,7 +2,7 @@ package com.javaguru.teacher.lesson_2.lessoncode;
 
 import java.util.Scanner;
 
-class UserInputExample {
+class  UserInputExample {
 
     public static void main(String[] args) {
         System.out.println("Please enter first number (int): ");
