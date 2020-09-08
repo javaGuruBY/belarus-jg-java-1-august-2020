@@ -35,8 +35,7 @@ class MyDog {
     private String name;
     private int age;
     private String color;
-    // private String newColor;
-    // private String newName;
+
 
     public MyDog (String name, int age, String color){
         this.name = name;
