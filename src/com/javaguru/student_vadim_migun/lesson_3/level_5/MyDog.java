@@ -21,7 +21,7 @@ class MyDogDemo {
         MyDog myDog = new MyDog("Rex",5, "black");
         myDog.voice();
         myDog.happyBirthday();
-        myDog.changeColor1 ("White");
+        myDog.changeColor ("White");
         myDog.changeName("Sharik");
 
     }
@@ -55,7 +55,7 @@ class MyDog {
         System.out.println("HappyBirthday: " + age + " year ");
     }
 
-    public void changeColor1 (String newColor) {    //public void changeColor(String newColor) {
+    public void changeColor (String newColor) {    //public void changeColor(String newColor) {
         this.color = newColor;   // напишите тут команду сохранения нового цвета в свойство класса
         System.out.println("Change color: " + newColor);
     }
