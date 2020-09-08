@@ -23,6 +23,7 @@ class MyDogDemo {
         myDog.happyBirthday();
         myDog.changeColor ("White");
         myDog.changeName("Sharik");
+        System.out.println("Good bue!");
 
     }
 
