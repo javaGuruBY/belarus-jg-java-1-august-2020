@@ -1,6 +1,10 @@
 package com.javaguru.student_vladimir_petranovski.lesson_4.level_2.task_6;
 
 import java.util.Scanner;
+/*
+Написать программу, которая запрашивает у пользователя
+два целых числа и выводит на консоль наименьшее из них.
+ */
 
 public class TaskSixMin {
     public static void main(String[] args) {
