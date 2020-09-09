@@ -18,8 +18,7 @@ public class Calculator {
     }
 
     boolean isEven(int number) {
-        if(number%2 == 0) return true;
-        else return false;
+        return number % 2 == 0;
     }
 
     int maxOfTwoNumbers(int firstNumber, int secondNumber) {
