@@ -11,7 +11,7 @@ class Calculator {
 }
  */
 
-class TaskElevenCalculator {
+public class TaskElevenCalculator {
     public int sum(int firstName, int secondName) {
         return firstName + secondName;
     }
