@@ -1,6 +1,6 @@
-package lesson_3.level_6.Task_24;
+package lesson_3.level_6.task_24;
 
-public class EscooterDemo {
+class EscooterDemo {
     public static void main(String[] args){
         //создаём электроскутер модели Halten RS-02
         Escooter escooterHalten =

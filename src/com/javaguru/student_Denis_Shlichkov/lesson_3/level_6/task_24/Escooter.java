@@ -1,6 +1,6 @@
-package lesson_3.level_6.Task_24;
+package lesson_3.level_6.task_24;
 
-public class Escooter {
+class Escooter {
     String modelName;
     private double currentSpeed;
     private int maxSpeed;
