@@ -18,6 +18,8 @@ public class TaskOne {
         else if (number > 0) {
             System.out.println("The number greater than zero");
         }
-        else System.out.println("The number is zero");
+        else {
+            System.out.println("The number is zero");
+        }
     }
 }

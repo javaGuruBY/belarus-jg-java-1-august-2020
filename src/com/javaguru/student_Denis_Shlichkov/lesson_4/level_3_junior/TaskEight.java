@@ -14,9 +14,14 @@ public class TaskEight {
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
         int numberThree = scanner.nextInt();
-        if (numberOne == numberTwo && numberOne == numberThree) System.out.println("All numbers are equal");
-        else if (numberOne != numberTwo && numberOne != numberThree && numberTwo != numberThree)
+        if (numberOne == numberTwo && numberOne == numberThree) {
+            System.out.println("All numbers are equal");
+        }
+        else if (numberOne != numberTwo && numberOne != numberThree && numberTwo != numberThree) {
             System.out.println("All numbers are different");
-        else System.out.println("Neither all are equal or different");
+        }
+        else {
+            System.out.println("Neither all are equal or different");
+        }
     }
 }

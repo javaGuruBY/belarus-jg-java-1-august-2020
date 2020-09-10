@@ -14,8 +14,14 @@ public class TaskNine {
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
         int numberThree = scanner.nextInt();
-        if (numberOne < numberTwo && numberTwo < numberThree) System.out.println("increasing");
-        else if (numberOne > numberTwo && numberTwo > numberThree) System.out.println("decreasing");
-        else System.out.println("Neither increasing or decreasing order");
+        if (numberOne < numberTwo && numberTwo < numberThree) {
+            System.out.println("increasing");
+        }
+        else if (numberOne > numberTwo && numberTwo > numberThree) {
+            System.out.println("decreasing");
+        }
+        else {
+            System.out.println("Neither increasing or decreasing order");
+        }
     }
 }

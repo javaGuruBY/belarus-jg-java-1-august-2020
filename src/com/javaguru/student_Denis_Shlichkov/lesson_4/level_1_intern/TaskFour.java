@@ -16,6 +16,8 @@ public class TaskFour {
         int number = scanner.nextInt();
         if ((number%2) != 0){
             System.out.println("The number is odd");
-        } else System.out.println("Thr number is even");
+        } else {
+            System.out.println("Thr number is even");
+        }
     }
 }

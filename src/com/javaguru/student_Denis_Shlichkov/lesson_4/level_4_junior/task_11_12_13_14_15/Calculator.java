@@ -22,9 +22,15 @@ public class Calculator {
     }
 
     int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        if(firstNumber > secondNumber) return 1;
-        else if (secondNumber > firstNumber) return 2;
-        else return 3;
+        if(firstNumber > secondNumber) {
+            return 1;
+        }
+        else if (secondNumber > firstNumber) {
+            return 2;
+        }
+        else {
+            return 3;
+        }
     }
         
     /*

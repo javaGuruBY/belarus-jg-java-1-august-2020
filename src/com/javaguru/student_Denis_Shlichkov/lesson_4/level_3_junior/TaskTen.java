@@ -17,8 +17,14 @@ public class TaskTen {
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
         int numberThree = scanner.nextInt();
-        if (numberOne >= numberTwo && numberOne >= numberThree) System.out.println(numberOne);
-        else if (numberTwo >= numberOne && numberTwo >= numberThree) System.out.println(numberTwo);
-        else if(numberThree > numberOne) System.out.println(numberThree);
+        if (numberOne >= numberTwo && numberOne >= numberThree) {
+            System.out.println(numberOne);
+        }
+        else if (numberTwo >= numberOne && numberTwo >= numberThree) {
+            System.out.println(numberTwo);
+        }
+        else if(numberThree > numberOne) {
+            System.out.println(numberThree);
+        }
     }
 }

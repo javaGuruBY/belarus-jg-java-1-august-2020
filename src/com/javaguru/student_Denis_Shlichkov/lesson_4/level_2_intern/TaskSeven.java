@@ -13,7 +13,11 @@ public class TaskSeven {
         Scanner scanner = new Scanner(System.in);
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
-        if(numberOne == numberTwo) System.out.println("Numbers are equals");
-        else System.out.println("Numbers are different");
+        if(numberOne == numberTwo) {
+            System.out.println("Numbers are equals");
+        }
+        else {
+            System.out.println("Numbers are different");
+        }
     }
 }

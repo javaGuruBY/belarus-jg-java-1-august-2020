@@ -12,8 +12,14 @@ public class TaskFive {
         Scanner scanner = new Scanner(System.in);
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
-        if(numberOne > numberTwo) System.out.println(numberOne);
-        else if (numberTwo > numberOne) System.out.println(numberTwo);
-        else System.out.println("Numbers are equals");
+        if(numberOne > numberTwo) {
+            System.out.println(numberOne);
+        }
+        else if (numberTwo > numberOne) {
+            System.out.println(numberTwo);
+        }
+        else {
+            System.out.println("Numbers are equals");
+        }
     }
 }
