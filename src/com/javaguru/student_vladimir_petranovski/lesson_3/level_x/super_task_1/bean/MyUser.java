@@ -1,36 +1,47 @@
 package com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1.bean;
 
 public class MyUser {
-    private static final int NUMBER_OF_ATTEMPTS = 3;
     private String login;
     private String password;
-    private boolean blocked;
-    private int loginAttemptsLeft;
+    private boolean isBlocked;
+    private int countOfLoginAttempts;
 
     public MyUser(String login, String password) {
         this.login = login;
         this.password = password;
-        this.blocked = false;
-        this.loginAttemptsLeft = NUMBER_OF_ATTEMPTS;
+        this.isBlocked = false;
+        this.countOfLoginAttempts = 3;
     }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
     public String getPassword() {
         return password;
     }
-    public int getLoginAttemptsLeft() {
-        return loginAttemptsLeft;
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public void dropLoginAttemptsLeft() {
+    public boolean isBlocked() {
+        return isBlocked;
+    }
 
+    public void setBlocked(boolean blocked) {
+        isBlocked = blocked;
     }
-    public boolean blockUser() {
-        return blocked;
+
+    public int getCountOfLoginAttempts() {
+        return countOfLoginAttempts;
     }
-    public boolean block() {
-        return blocked = true;
-    }
-    public boolean unblock() {
-        this.loginAttemptsLeft = NUMBER_OF_ATTEMPTS;
-        return blocked = false;
+
+    public void setCountOfLoginAttempts(int countOfLoginAttempts) {
+        this.countOfLoginAttempts = countOfLoginAttempts;
     }
 }

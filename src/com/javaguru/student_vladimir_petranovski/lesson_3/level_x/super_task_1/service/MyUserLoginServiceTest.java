@@ -6,93 +6,179 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MyUserLoginServiceTest {
+public class MyUserLoginServiceTest {
 
-    @org.junit.jupiter.api.Test
-    void loginShouldReturnTrueTest() {
+    @Test
+    public void loginTestshouldReturnTrue() {
+        MyUser user = new MyUser("User", "1234");
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("abc", "123");
+        boolean actual = userLoginService.login(user, "1234");
+
         boolean expected = true;
-        boolean actual = userLoginService.login(user, "123");
+
         assertEquals(expected, actual);
     }
     @Test
-    void loginShouldReturnFalseTest() {
+    public void loginTestShouldReturnFalse() {
+        MyUser user = new MyUser("User", "1234");
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("abc", "123");
+        boolean actual = userLoginService.login(user, "12345");
+
         boolean expected = false;
-        boolean actual = userLoginService.login(user, "456");
+
         assertEquals(expected, actual);
     }
 
     @Test
-    void checkIfPasswordMathUserPasswordTestShouldReturnTrue() {
+    public void comparePasswords() {
+    }
+
+    @Test
+    public void resetCountOfLoginAttempts() {
+    }
+
+    @Test
+    public void isUserBlocked() {
+    }
+
+    @Test
+    public void decrementCountOfLoginAttempts() {
+    }
+
+    @Test
+    public void isLoginAttemptsLeft() {
+    }
+
+
+
+    @Test
+    public void checkIfPasswordMatchUserPasswordShouldReturnTrue() {
+        MyUser user = new MyUser("User", "1234");
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
+        boolean actual = userLoginService.comparePasswords(user, "1234");
+
         boolean expected = true;
-        boolean actual = userLoginService.checkIfPasswordMathUserPassword(user, "321");
+
         assertEquals(expected, actual);
     }
     @Test
-    void checkIfPasswordMathUserPasswordTestShouldReturnFalse() {
+    public void checkIfPasswordMatchUserPasswordShouldReturnFalse() {
+        MyUser user = new MyUser("User", "1234");
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
+        boolean actual = userLoginService.comparePasswords(user, "12345");
+
         boolean expected = false;
-        boolean actual = userLoginService.checkIfPasswordMathUserPassword(user, "123");
+
         assertEquals(expected, actual);
     }
 
     @Test
-    void dropLoginAttemptsLeftTest() {
+    public void dropLoginAttempLeft() {
+        MyUser user = new MyUser("User", "1234");
+        user.setCountOfLoginAttempts(1);
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("sdk", "421");
+        MyUser updatedUser = userLoginService.resetCountOfLoginAttempts(user);
+
         int expected = 3;
-        MyUser updateUser = userLoginService.dropLoginAttemptsLeft(user);
-        int actual = updateUser.getLoginAttemptsLeft();
+        int actual = updatedUser.getCountOfLoginAttempts();
+
         assertEquals(expected, actual);
     }
 
     @Test
-    void isUserBlockedShouldReturnTrueTest() {
+    public void isUserBlockedShouldReturnTrue() {
+        MyUser user = new MyUser("User", "1234");
+        user.setBlocked(true);
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
-        boolean actual = user.block();
+
         boolean expected = true;
+        boolean actual = userLoginService.isUserBlocked(user);
+
         assertEquals(expected, actual);
     }
     @Test
-    void isUserBlockedShouldReturnFalseTest() {
+    public void isUserBlockedShouldReturnfalse() {
+        MyUser user = new MyUser("User", "1234");
+        user.setBlocked(false);
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
-        boolean actual = user.unblock();
+
         boolean expected = false;
+        boolean actual = userLoginService.isUserBlocked(user);
+
         assertEquals(expected, actual);
     }
 
     @Test
-    void decrementLoginAttemptsLeftTest() {
+    public void decrementloginAttemptLeft() {
+        MyUser user = new MyUser("User", "1234");
+        user.setCountOfLoginAttempts(3);
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
-        int actual = userLoginService.decrementLoginAttemptsLeft(user);
+
         int expected = 2;
+        userLoginService.decrementCountOfLoginAttempts(user);
+        int actual = user.getCountOfLoginAttempts();
+
         assertEquals(expected, actual);
     }
 
     @Test
-    void blockUserTest() {
+    public void blockUser() {
+        MyUser user = new MyUser("User", "1234");
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
-        boolean actual = userLoginService.blockUser(user);
+
         boolean expected = true;
+        userLoginService.blockUser(user);
+        boolean actual = user.isBlocked();
+
         assertEquals(expected, actual);
     }
 
     @Test
-    void isLoginAttemptsLeftIsLeftTrueTest() {
+    public void ifLoginAttemptLeftIsLeft() {
+        MyUser user = new MyUser("User", "1234");
+        user.setCountOfLoginAttempts(1);
+
         MyUserLoginService userLoginService = new MyUserLoginService();
-        MyUser user = new MyUser("dsc", "321");
-        boolean actual = userLoginService.isLoginAttemptsLeftIsLeft(user);
+
         boolean expected = true;
+        boolean actual = userLoginService.IsLoginAttemptsLeft(user);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void loginShouldBlockUser() {
+        MyUser user = new MyUser("User", "1234");
+        user.setCountOfLoginAttempts(1);
+
+        MyUserLoginService userLoginService = new MyUserLoginService();
+
+        userLoginService.login(user, "12345");
+        boolean actual = user.isBlocked();
+        boolean expected = true;
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void loginShouldNotProceed() {
+        MyUser user = new MyUser("User", "1234");
+        user.setCountOfLoginAttempts(0);
+        user.setBlocked(true);
+
+        MyUserLoginService userLoginService = new MyUserLoginService();
+
+        boolean actual = userLoginService.login(user, "1234");
+        boolean expected = false;
+
         assertEquals(expected, actual);
     }
 }
