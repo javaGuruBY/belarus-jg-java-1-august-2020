@@ -1,3 +1,4 @@
+/*
 package com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1;
 
 import com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1.bean.MyUser;
@@ -11,3 +12,5 @@ public class UserLoginServiceDemo {
         myUserLoginService.login(userOne, "321");
     }
 }
+
+ */
