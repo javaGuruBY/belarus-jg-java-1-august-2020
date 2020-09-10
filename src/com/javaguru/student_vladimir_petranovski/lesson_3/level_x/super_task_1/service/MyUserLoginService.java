@@ -1,5 +1,5 @@
+/*
 package com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1.service;
-
 
 import com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1.bean.MyUser;
 
@@ -48,3 +48,5 @@ public class MyUserLoginService {
         return user.getCountOfLoginAttempts() > 0;
     }
 }
+
+ */

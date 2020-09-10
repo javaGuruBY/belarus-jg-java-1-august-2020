@@ -1,3 +1,4 @@
+/*
 package com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1.bean;
 
 public class MyUser {
@@ -45,3 +46,5 @@ public class MyUser {
         this.countOfLoginAttempts = countOfLoginAttempts;
     }
 }
+
+ */

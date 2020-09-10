@@ -1,3 +1,4 @@
+/*
 package com.javaguru.student_vladimir_petranovski.lesson_3.level_x.super_task_1.service;
 
 
@@ -182,3 +183,5 @@ public class MyUserLoginServiceTest {
         assertEquals(expected, actual);
     }
 }
+
+ */
