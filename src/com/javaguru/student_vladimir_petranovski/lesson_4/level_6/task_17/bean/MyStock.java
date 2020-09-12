@@ -1,5 +1,5 @@
 package com.javaguru.student_vladimir_petranovski.lesson_4.level_6.task_17.bean;
-/*
+   /*
 Необходимо реализовать класс Stock ("акция") таким образом,
 чтобы была возможность узнать текущую цену акции,
 а также ее максимальную и минимальную стоимость
@@ -38,13 +38,15 @@ System.out.println(priceInformation);
 Company = "GOOG", Current Price = 10, Min Price = 10, Max Price = 10
 Company = "GOOG", Current Price = 14, Min Price = 7, Max Price = 15
  */
-public class Stock {
+
+public class MyStock {
+
     private String name;
     private double currentPrice;
     private double minPrice;
     private double maxPrice;
 
-    public Stock(String name, double currentPrice) {
+    public MyStock(String name, double currentPrice) {
         this.name = name;
         this.currentPrice = currentPrice;
         this.minPrice = currentPrice;
@@ -62,12 +64,15 @@ public class Stock {
     public double getMinPrice() {
         return minPrice;
     }
+
     public void setMinPrice(double minPrice) {
         this.minPrice = minPrice;
     }
+
     public double getMaxPrice() {
         return maxPrice;
     }
+
     public void setMaxPrice(double maxPrice) {
         this.maxPrice = maxPrice;
     }
