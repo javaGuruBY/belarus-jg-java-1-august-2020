@@ -36,3 +36,5 @@ class User {
         return userPassword;
     }
 }
+/* Проверил Артем:
+Почитать про POJO и Java Bean! и сделать класс четко по этим требованиям.*/
