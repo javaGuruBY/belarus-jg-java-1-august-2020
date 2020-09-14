@@ -2,7 +2,8 @@ package lesson_3.level_x.super_task1;
 
 class UserLoginService {
 
-/*В методе идет проверка только пароля..
+/*Проверил Артем:
+В методе идет проверка только пароля..
 Логин тоже должен проверяться на валидность.*/
     boolean login(User user, String password){
         if (password.equals(user.getUserPassword())) {
