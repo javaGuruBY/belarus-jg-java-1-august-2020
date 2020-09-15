@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.training;
+package com.javaguru.student_vadim_migun.training.HeadFirst;
 
 class BeerSong {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ class BeerSong {
             System.out.println();  // сделал пробел
 
             beerNum = beerNum - 1;
-             if (beerNum > 1) {   // исправил на 1
+             if (beerNum > 1) {   // исправил 0 на 1
                  System.out.println(beerNum + " " + word + " пива на стене");
              } else if (beerNum == 1) {    // дописал 3 строки
                  word = "бутылка";
@@ -26,7 +26,16 @@ class BeerSong {
              } else {
                  System.out.println("Нет бутылок пива на стене");
                  }
-             System.out.println(beerNum); // чтобы понимать в какой последовательности выводятся строки из if и while
+
+                  // исходный вариант
+
+/*             beerNum = beerNum - 1;
+             if (beerNum > 0) {
+                 System.out.println(beerNum + " " + word + " пива на стене");
+             } else {
+                 System.out.println("Нет бутылок пива на стене");
+             }
+*/
 
         }
     }
