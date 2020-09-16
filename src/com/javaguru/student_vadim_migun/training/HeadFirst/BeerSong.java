@@ -15,7 +15,7 @@ class BeerSong {
             System.out.println("Возьми одну.");
             System.out.println("Пусти по кругу.");
 
-            System.out.println();  // сделал пробел
+            System.out.println();  // сделал пробел для читабельности в консоли
 
             beerNum = beerNum - 1;
              if (beerNum > 1) {   // исправил 0 на 1
