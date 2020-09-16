@@ -13,10 +13,9 @@ class ArrayUtil {
  */
 class ArrayUtil {
     public void fillArrayWithRandomNumbers(int[] array) {
-        int[] arr = new int[5];
         Random random = new Random();
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt();
         }
     }
 }
