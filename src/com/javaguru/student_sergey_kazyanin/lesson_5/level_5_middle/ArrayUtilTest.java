@@ -30,6 +30,7 @@ class ArrayUtilTest {
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
         test.shouldCreateArray();
+        System.out.println();
         test.shouldFillArrayWithRandomNumbers();
     }
 
@@ -42,20 +43,28 @@ class ArrayUtilTest {
     }
 
     public void shouldFillArrayWithRandomNumbers() {
-        // Write test implementation here !!!
         int arraySize = 4;
         ArrayUtil arrayUtil = new ArrayUtil();
-        int[] actualResult = arrayUtil.createArray(arraySize);
-        for (int i: actualResult) {System.out.println(i);}
 
-        arrayUtil.fillArrayWithRandomNumbers(actualResult);
-        for (int i: actualResult) {System.out.println(i);}
-        System.out.println();
-        arrayUtil.fillArrayWithRandomNumbers(actualResult);
-        for (int i: actualResult) {System.out.println(i);}
+        int[] testArray = arrayUtil.createArray(arraySize);
+        arrayUtil.fillArrayWithRandomNumbers(testArray);
+        System.out.println("===========BEGIN TEST Random data ...========");
+        int actualResult = sumArrayNumbers(testArray);
+//        for (int i: testArray) {System.out.println(i);}
+        System.out.println("1st sum - " + actualResult);
 
-        int[] expectedResult = new int[arraySize];
-        printResult(actualResult, expectedResult, "Put data to Array");
+        arrayUtil.fillArrayWithRandomNumbers(testArray);
+        arrayUtil.fillArrayWithRandomNumbers(testArray);
+        arrayUtil.fillArrayWithRandomNumbers(testArray);
+        arrayUtil.fillArrayWithRandomNumbers(testArray);
+        arrayUtil.fillArrayWithRandomNumbers(testArray);
+
+        int expectedResult = sumArrayNumbers(testArray);
+//        for (int i: testArray) {System.out.println(i);}
+
+        System.out.println("2nd sum - " + expectedResult);
+
+        printResult(actualResult, expectedResult, "END TEST Random data to Array");
 
     }
 
@@ -65,6 +74,22 @@ class ArrayUtilTest {
         } else {
             System.out.println(testName + " test = FAILURE!!! actualResult = " + actualResult + " | expectedResult = " + expectedResult);
         }
+    }
+
+    public void printResult(int actualResult, int expectedResult, String testName) {
+        if (actualResult != expectedResult) {
+            System.out.println(testName + " test = PASSED");
+        } else {
+            System.out.println(testName + " test = FAILURE!!! actualResult = " + actualResult + " | expectedResult = " + expectedResult);
+        }
+    }
+
+    public int sumArrayNumbers(int[] array) {
+        int sum = 0;
+        for(int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
     }
 
 }
