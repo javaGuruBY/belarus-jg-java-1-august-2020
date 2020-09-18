@@ -2,14 +2,14 @@
 Напишите программу, в которой:
 - запросите у пользователя с консоли длину массива
 - создайте массив указанной пользователем длины
-- заполните массив числами полученными от пользователя
+- заполните массив случайными числами
 - распечатайте на консоль все элементы массива.
  */
-package lesson_5.level_4_junior.task_25;
+package lesson_5.level_4_junior.task_26;
 
 import java.util.Scanner;
 
-class TaskTwentyFive {
+class TaskTwentySix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numbersOfArray;
@@ -18,14 +18,13 @@ class TaskTwentyFive {
 
         int [] newArray = new int[numbersOfArray];
 
-        System.out.println("Insert elements of array");
         for (int i = 0; i < newArray.length; i++) {
-            System.out.println("Number " + (i+1));
-            newArray[i] = scanner.nextInt();
+            newArray[i] = (int) (Math.random() * 101);
+            System.out.println(new StringBuilder().append("Number [").append(i).append("] = ").append(newArray[i]).toString());
         }
-
+/*
         for (int j : newArray) {
             System.out.println(j);
-        }
+        }*/
     }
 }
