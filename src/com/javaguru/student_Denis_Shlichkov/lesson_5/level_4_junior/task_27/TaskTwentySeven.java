@@ -8,7 +8,7 @@
 package lesson_5.level_4_junior.task_27;
 
 
-public class TaskTwentySeven {
+class TaskTwentySeven {
     public static void main(String[] args) {
         int numbersOfArray = (int) (Math.random() * 11);
         System.out.println("Numbers of array " + numbersOfArray);
@@ -23,10 +23,9 @@ public class TaskTwentySeven {
                 maximumElement = newArray[0];
             }
             else {
-                if (maximumElement >= newArray[i]) {
-                    continue;
+                if (newArray[i] > maximumElement) {
+                    maximumElement = newArray[i];
                 }
-                maximumElement = newArray[i];
             }
         }
 

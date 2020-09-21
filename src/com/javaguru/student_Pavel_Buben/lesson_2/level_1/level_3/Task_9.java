@@ -2,7 +2,7 @@ package com.javaguru.student_Pavel_Buben.lesson_2.level_1.level_3;
 
 import java.util.Scanner;
 
- class task9 {
+ class Task9 {
     public static void main(String[] args) {
         System.out.println("Введите целое число:");
         Scanner sc = new Scanner(System.in);
