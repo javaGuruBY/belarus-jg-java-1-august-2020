@@ -49,7 +49,7 @@ class ArrayUtilTest {
         }
         else System.out.println("Test - OK");
     }
-//поиск максимального числа
+
     public void shouldFindMaxNumber() {
         ArrayUtil arrayUtil = new ArrayUtil();
         int arrayNumbers = 9;

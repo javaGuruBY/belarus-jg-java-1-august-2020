@@ -1,6 +1,5 @@
 package lesson_5.level_6_middle;
 
-
 class ArrayUtil {
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
