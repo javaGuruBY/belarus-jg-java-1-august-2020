@@ -1,6 +1,5 @@
 package lesson_6.level_1_intern.task_3;
 
-
 public class FizzBuzzTest {
     public static void main(String[] args) {
         FizzBuzzTest fizzBuzzTest = new FizzBuzzTest();

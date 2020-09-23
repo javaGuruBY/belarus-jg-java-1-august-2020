@@ -1,5 +1,6 @@
 Дана программа:
 
+
 class DayOfTheWeekDetectorDemo {
 
     public static void main(String[] args) {

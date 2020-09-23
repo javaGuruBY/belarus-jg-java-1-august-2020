@@ -1,5 +1,6 @@
 package lesson_6.level_1_intern.task_3;
 
+
 class FizzBuzz {
 
     private int initialNumber;

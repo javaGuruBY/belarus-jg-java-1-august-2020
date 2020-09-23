@@ -1,5 +1,6 @@
 package lesson_6.level_1_intern.task_2;
 
+
 class DayOfTheWeekDetector {
     String detectDayName(int number){
         java.lang.String dayWeek = null;

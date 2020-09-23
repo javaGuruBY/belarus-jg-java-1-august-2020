@@ -1,5 +1,6 @@
 package lesson_6.level_1_intern.task_2;
 
+
 class DayOfTheWeekDetectorTest {
     public static void main(String[] args) {
         DayOfTheWeekDetectorTest test = new DayOfTheWeekDetectorTest();
