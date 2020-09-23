@@ -1,13 +1,12 @@
 package lesson_6.level_1_intern.task_3;
 
-import javax.sound.midi.Soundbank;
 
 public class FizzBuzzTest {
     public static void main(String[] args) {
         FizzBuzzTest fizzBuzzTest = new FizzBuzzTest();
         System.out.println("Test FizzBuzz");
         fizzBuzzTest.testFizzBuzz();
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Test FizzBuzzOptimized");
         fizzBuzzTest.testFizzBuzzOptimized();
