@@ -6,13 +6,27 @@ class DayOfTheWeekDetector {
         java.lang.String dayWeek = null;
         if ((number >=1) && (number <= 7)) {
             switch (number) {
-                case 1 -> dayWeek = "Monday";
-                case 2 -> dayWeek = "Tuesday";
-                case 3 -> dayWeek = "Wednesday";
-                case 4 -> dayWeek = "Thursday";
-                case 5 -> dayWeek = "Friday";
-                case 6 -> dayWeek = "Saturday";
-                case 7 -> dayWeek = "Sunday";
+                case (1):
+                    dayWeek = "Monday";
+                    break;
+                case 2:
+                    dayWeek = "Tuesday";
+                    break;
+                case 3:
+                    dayWeek = "Wednesday";
+                    break;
+                case 4:
+                    dayWeek = "Thursday";
+                    break;
+                case 5:
+                    dayWeek = "Friday";
+                    break;
+                case 6:
+                    dayWeek = "Saturday";
+                    break;
+                case 7:
+                    dayWeek = "Sunday";
+                    break;
             }
         }
         else {
