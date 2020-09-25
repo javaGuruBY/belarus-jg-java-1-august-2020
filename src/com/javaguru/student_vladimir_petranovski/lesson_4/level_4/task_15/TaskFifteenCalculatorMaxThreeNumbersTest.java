@@ -1,173 +1,88 @@
 package com.javaguru.student_vladimir_petranovski.lesson_4.level_4.task_15;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "тесты написаны неверно. Лучше посмотреть пример и сдалть по аналогии.")
 public class TaskFifteenCalculatorMaxThreeNumbersTest {
+    private TaskFifteenCalculatorMaxThreeNumbers test = new TaskFifteenCalculatorMaxThreeNumbers();
+
     public void maxOfThreeNumbersTest1() {
-        int firstNumber = 3;
-        int secondNumber = 5;
-        int thirdNumber = 7;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = 3, secondNumber = 5, thirdNumber = 7;
+        int expected = 7;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Третье число больше первого и второго. Test == SUCCESS");
+        } else {
+            System.out.println("Третье число больше первого и второго. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
+
     public void maxOfThreeNumbersTest2() {
-        int firstNumber = 9;
-        int secondNumber = 5;
-        int thirdNumber = 1;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = 10, secondNumber = -2, thirdNumber = 5;
+        int expected = 10;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Петвое число больше третьего и второго. Test == SUCCESS");
+        } else {
+            System.out.println("Петвое число больше третьего и второго. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
+
     public void maxOfThreeNumbersTest3() {
-        int firstNumber = 3;
-        int secondNumber = 5;
-        int thirdNumber = 1;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = -17, secondNumber = 0, thirdNumber = -10;
+        int expected = 0;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Второе число больше третьего и первого. Test == SUCCESS");
+        } else {
+            System.out.println("Второе число больше третьего и первого. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
+
     public void maxOfThreeNumbersTest4() {
-        int firstNumber = 3;
-        int secondNumber = 3;
-        int thirdNumber = 3;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = 10, secondNumber = 10, thirdNumber = 5;
+        int expected = 10;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Первые два числа равны и больше третьего. Test == SUCCESS");
+        } else {
+            System.out.println("Первые два числа равны и больше третьего. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
+
     public void maxOfThreeNumbersTest5() {
-        int firstNumber = 3;
-        int secondNumber = 3;
-        int thirdNumber = 1;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = 10, secondNumber = 1, thirdNumber = 10;
+        int expected = 10;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Первое и третье числа равны и больше второго. Test == SUCCESS");
+        } else {
+            System.out.println("Первое и третье числа равны и больше второго. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
+
     public void maxOfThreeNumbersTest6() {
-        int firstNumber = 3;
-        int secondNumber = 1;
-        int thirdNumber = 3;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = 1, secondNumber = 3, thirdNumber = 3;
+        int expected = 3;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Второе и третье числа равны и больше первого. Test == SUCCESS");
+        } else {
+            System.out.println("Второе и третье числа равны и больше первого. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
+
     public void maxOfThreeNumbersTest7() {
-        int firstNumber = 1;
-        int secondNumber = 3;
-        int thirdNumber = 3;
-        if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первое число больше второго и третьего");
+        int firstNumber = -2, secondNumber = -2, thirdNumber = -2;
+        int expected = -2;
+        int actual = test.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (expected == actual) {
+            System.out.println("Числа равны. Test == SUCCESS");
+        } else {
+            System.out.println("Числа равны. Test == FAILED");
         }
-        else if(firstNumber == secondNumber && firstNumber > thirdNumber) {
-            System.out.println("Первые два числа равны и больше третьего");
-        }
-        else if(firstNumber == thirdNumber && firstNumber > secondNumber) {
-            System.out.println("Первое и третье числа равны и больше второго");
-        }
-        else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("Второе число больше первого и третьего");
-        }
-        else if(secondNumber == thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Второе и третье число равны и больше первого");
-        }
-        else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
-            System.out.println("Третье число больше первого и второго");
-        } else
-            System.out.println("Числа равны");
     }
 
     public static void main(String[] args) {
