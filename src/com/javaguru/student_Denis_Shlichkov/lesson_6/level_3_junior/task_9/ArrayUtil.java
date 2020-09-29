@@ -1,19 +1,22 @@
 package lesson_6.level_3_junior.task_9;
 
+import java.util.Arrays;
+
 class ArrayUtil {
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }
 
-    public void fillArrayWithRandomNumbers(int[] array) {
+    public int[] fillArrayWithRandomNumbers(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 101);
         }
+        return array;
     }
 
     public void printArrayToConsole(int[] array) {
-        for (int j : array) {
-            System.out.println(array[j]);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
     }
 
@@ -35,5 +38,10 @@ class ArrayUtil {
             }
         }
         return minNumber;
+    }
+
+    public boolean findNumberInArray(int [] array, int findNumber) {
+        String arrayStr = Arrays.toString(array);
+        return arrayStr.contains(String.valueOf(findNumber));
     }
 }
