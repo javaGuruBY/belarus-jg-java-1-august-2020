@@ -9,6 +9,7 @@ public class ArrayUtilTest {
         test.shouldFillArrayWithRandomNumbers();
         test.shouldFindMaxNumber();
         test.shouldFindMinNumber();
+        test.findNumberArray();
     }
 
     public void shouldCreateArray() {
@@ -83,6 +84,19 @@ public class ArrayUtilTest {
         int minNumber = arrayUtil.findMinNumber(arrayCreated);
         System.out.println("Maximum number test");
         if (minNumber == minNumberTest) {
+            System.out.println("Test - OK");
+        }
+        else System.out.println("Test - FAIL");
+    }
+
+    public void findNumberArray () {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int arrayLength = 10;
+        int [] arrayTest = arrayUtil.createArray(arrayLength);
+        arrayUtil.fillArrayWithRandomNumbers(arrayTest);
+        int findNumber = arrayTest[4];
+        System.out.println("Find number is " + findNumber);
+        if (arrayUtil.findNumberInArray(arrayTest, findNumber) && arrayTest[4] == findNumber) {
             System.out.println("Test - OK");
         }
         else System.out.println("Test - FAIL");
