@@ -31,19 +31,19 @@ PS: если вы не можете придумать как разбить э�
 class WordService {
     String findMostFrequentWord(String text) {
 
-        return divideByArrayWord(text)[maxAmountRepeatWordOnIndex(text)];
+        return divideStringByArrayWord(text)[foundMaxAmountRepeatWordOnIndex(text)];
     }
 
-    static String[] divideByArrayWord(String text) {
+    static String[] divideStringByArrayWord(String text) {
         String[] words = text.toLowerCase().split("[\\p{Punct}\\s]+");
         return words;
     }
 
-    static int[] amountCountEachWord(String text) {
-        int[] count = new int[divideByArrayWord(text).length];
-        for (int i = 0; i < divideByArrayWord(text).length; i++) {
-            for (String s : divideByArrayWord(text)) {
-                if (divideByArrayWord(text)[i].equals(s)) {
+    static int[] fillArrayIntegerForCountEachWord(String text) {
+        int[] count = new int[divideStringByArrayWord(text).length];
+        for (int i = 0; i < divideStringByArrayWord(text).length; i++) {
+            for (String s : divideStringByArrayWord(text)) {
+                if (divideStringByArrayWord(text)[i].equals(s)) {
                     count[i]++;
                 }
             }
@@ -51,11 +51,11 @@ class WordService {
         return count;
     }
 
-    static int maxAmountRepeatWordOnIndex(String text) {
+    static int foundMaxAmountRepeatWordOnIndex(String text) {
         int max = 0, index = 0;
-        for (int i = 0; i < amountCountEachWord(text).length; i++) {
-            if (max < amountCountEachWord(text)[i]) {
-                max = amountCountEachWord(text)[i];
+        for (int i = 0; i < fillArrayIntegerForCountEachWord(text).length; i++) {
+            if (max < fillArrayIntegerForCountEachWord(text)[i]) {
+                max = fillArrayIntegerForCountEachWord(text)[i];
                 index = i;
             }
         }
