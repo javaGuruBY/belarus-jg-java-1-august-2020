@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_7.level_1.Task_1;
+package com.javaguru.student_vadim_migun.lesson_7.level_1_intern;
 /*
 Дана строка с текстом.
 Написать метод, который найдёт слово, которое в тексте встречается больше всего раз.
@@ -107,7 +107,7 @@ class WordService {
         text = text.replace(", ", " "); // замена знаков препинания на пробел
         System.out.println(text);
 
-        text = text.toLowerCase();  // // все к строчным буквам
+        text = text.toLowerCase();  // все к строчным буквам
         System.out.println(text);
 
         String[] textArray = text.split(", ");  // текст в масссив (удаление из массива ,)
