@@ -20,34 +20,28 @@ class LeapYear {
 class LeapYear {
     public boolean isLeapYear(int year) {
         LeapYear leapYear = new LeapYear();
+        if (year == 0) {
+            return false;
+        }
         if (leapYear.isDivisionOnFourHundred(year)) {
             return true;
         } else if (leapYear.isDivisionOnHundred(year)) {
             return true;
         } else if (leapYear.isDivisionONFour(year)) {
             return true;
-        } else
-            return false;
+        }
+        return false;
     }
+
     public boolean isDivisionONFour(int year) {
-        if ((year % 4) == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (year % 4) == 0;
     }
+
     public  boolean isDivisionOnHundred(int year) {
-        if ((year % 100) == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (year % 100) == 0;
     }
+
     public boolean isDivisionOnFourHundred(int year) {
-        if ((year % 400) ==0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (year % 400) == 0;
     }
 }
