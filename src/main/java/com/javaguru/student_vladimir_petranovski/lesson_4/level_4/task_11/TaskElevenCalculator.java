@@ -19,6 +19,9 @@ public class TaskElevenCalculator {
         return firstName - secondName;
     }
     public int division(int firstName, int secondName) {
+        if (secondName == 0) {
+            return 0;
+        }
         return firstName / secondName;
     }
     public int multiplication(int firstName, int secondName) {
