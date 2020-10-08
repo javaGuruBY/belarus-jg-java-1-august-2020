@@ -20,12 +20,7 @@ class Calculator {
  */
 public class TaskFourteenCalculatorMaxOfTwoNumbers {
     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        if(firstNumber > secondNumber) {
-            return firstNumber;
-        } else if(firstNumber < secondNumber) {
-            return secondNumber;
-        } else
-            return firstNumber;
+        return firstNumber >= secondNumber ? firstNumber : secondNumber;
     }
 
     public static void main(String[] args) {
