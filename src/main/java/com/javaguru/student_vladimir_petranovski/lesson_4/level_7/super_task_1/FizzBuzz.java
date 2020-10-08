@@ -16,7 +16,9 @@ class FizzBuzz {
  */
 class FizzBuzz {
     public String detect(int number) {
-        if (((number % 3) == 0) && ((number) % 5) == 0) {
+        if (number == 0) {
+            return "Enter another number not equals zero";
+        } else if (((number % 3) == 0) && ((number) % 5) == 0) {
             return "FizzBuzz";
         } else if ((number % 3) == 0) {
             return "Fizz";
