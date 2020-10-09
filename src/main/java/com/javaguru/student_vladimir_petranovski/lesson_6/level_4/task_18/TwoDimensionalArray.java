@@ -26,7 +26,7 @@ class TwoDimensionalArray {
        return twoArray;
     }
 
-    public static int sumAllNumbersArray(int[][] twoArray) {
+    public int sumAllNumbersArray(int[][] twoArray) {
         int sum = 0;
         for (int i = 0; i < twoArray.length; i++) {
             for (int j = 0; j < twoArray[0].length; j++) {
@@ -35,6 +35,7 @@ class TwoDimensionalArray {
         }
         return sum;
     }
+
     public static int[][] array() { // для проверки метода sumAllNumbersArray, потому что при вызове в мэйне его не видно наглядно
         int[][] array = {{3, 5, 6}, {1,4, 7}};
         return array;
@@ -42,12 +43,13 @@ class TwoDimensionalArray {
 
     public static void main(String[] args) {
         //System.out.println(Arrays.deepToString(fillArray()));
+        TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray();
         for (int i = 0; i < fillArray().length; i++) {
             for (int j = 0; j < fillArray()[0].length; j++) {
                 System.out.print(" " + fillArray()[i][j] + " ");
             }
             System.out.println();
         }
-        System.out.println(sumAllNumbersArray(array()));
+        System.out.println(twoDimensionalArray.sumAllNumbersArray(array()));
     }
 }
