@@ -11,8 +11,7 @@ public int[][] createField().
  */
 
 class TicTacToe {
-    public int[][] createField() {
-        int[][] field = new int[3][3];
+    public int[][] createField(int[][] field) {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 field[i][j] = -1;
