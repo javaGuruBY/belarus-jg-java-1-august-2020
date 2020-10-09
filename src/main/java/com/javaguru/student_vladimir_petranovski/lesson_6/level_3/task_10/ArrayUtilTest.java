@@ -15,19 +15,19 @@ class ArrayUtilTest {
 
     public void countWhetherNumberTestTrue1() {
         int expected = 3;
-        int actual = ar.countWhetherNumber(1);
+        int actual = ar.countWhetherNumber(arr, 1);
         checkResult(expected == actual, "countWhetherNumberTestTrue1");
     }
 
     public void countWhetherNumberTestTrue2() {
-        int expected = 4;
-        int actual = ar.countWhetherNumber(0);
+        int expected = 0;
+        int actual = ar.countWhetherNumber(arr,2);
         checkResult(expected == actual, "countWhetherNumberTestTrue2");
     }
 
     public void countWhetherNumberTestTrue3() {
         int expected = 2;
-        int actual = ar.countWhetherNumber(3);
+        int actual = ar.countWhetherNumber(arr, 3);
         checkResult(expected == actual, "countWhetherNumberTestTrue3");
     }
 

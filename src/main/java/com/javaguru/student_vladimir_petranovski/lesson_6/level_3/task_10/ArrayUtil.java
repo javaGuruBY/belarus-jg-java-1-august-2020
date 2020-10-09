@@ -5,8 +5,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_6.level_3.task_10;
  */
 
 class ArrayUtil {
-    public int countWhetherNumber(int number) {
-        int[] arr = {0, 1, 0, 1, 0, 1, 0, 3, 3};
+    public int countWhetherNumber(int[] arr, int number) {
         int count = 0;
         for (int i : arr) {
             if(number == i) {
@@ -14,9 +13,5 @@ class ArrayUtil {
             }
         }
         return count;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new ArrayUtil().countWhetherNumber(3));
     }
 }
