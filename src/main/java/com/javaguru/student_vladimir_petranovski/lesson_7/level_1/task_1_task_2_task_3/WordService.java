@@ -28,6 +28,8 @@ PS: если вы не можете придумать как разбить э�
 собрать решение главной задачи.
  */
 
+import java.util.Arrays;
+
 class WordService {
     String findMostFrequentWord(String text) {
 
