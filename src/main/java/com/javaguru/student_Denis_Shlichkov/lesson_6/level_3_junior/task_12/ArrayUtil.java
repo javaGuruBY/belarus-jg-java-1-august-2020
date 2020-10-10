@@ -1,4 +1,4 @@
-package lesson_6.level_3_junior.task_10;
+package lesson_6.level_3_junior.task_12;
 
 import java.util.Arrays;
 
@@ -15,8 +15,8 @@ class ArrayUtil {
     }
 
     void printArrayToConsole(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        for (int j : array) {
+            System.out.println(j);
         }
     }
 
@@ -47,11 +47,28 @@ class ArrayUtil {
 
     int findNumberOfNumbers(int[] array, int findNumber) {
         int numberOfNumbers = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (findNumber == array[i]) {
+        for (int j : array) {
+            if (findNumber == j) {
                 numberOfNumbers++;
             }
         }
         return numberOfNumbers;
+    }
+
+    void replace(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+                break;
+            }
+        }
+    }
+
+    void replaceAll(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+            }
+        }
     }
 }

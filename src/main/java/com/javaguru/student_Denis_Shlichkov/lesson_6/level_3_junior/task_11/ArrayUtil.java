@@ -1,4 +1,4 @@
-package lesson_6.level_3_junior.task_10;
+package lesson_6.level_3_junior.task_11;
 
 import java.util.Arrays;
 
@@ -53,5 +53,14 @@ class ArrayUtil {
             }
         }
         return numberOfNumbers;
+    }
+
+    void replace(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+                break;
+            }
+        }
     }
 }

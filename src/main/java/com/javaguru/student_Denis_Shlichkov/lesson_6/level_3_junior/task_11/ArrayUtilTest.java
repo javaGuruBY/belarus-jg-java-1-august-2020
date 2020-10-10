@@ -1,4 +1,4 @@
-package lesson_6.level_3_junior.task_10;
+package lesson_6.level_3_junior.task_11;
 
 import java.util.Arrays;
 
@@ -11,13 +11,13 @@ class ArrayUtilTest {
         test.shouldFindMinNumber();
         test.findNumberArray();
         test.findNumberOfNumbersTest();
+        test.replaceTest();
     }
 
     void shouldCreateArray() {
         ArrayUtil arrayUtil = new ArrayUtil();
         int[] arrayReference = new int[9];
         int[] arrayCreated = arrayUtil.createArray(9);
-        //проверка на количество элементов
         System.out.println("If the arrays are the same");
         if (arrayReference.length == arrayCreated.length) {
             System.out.println("Test - OK");
@@ -107,6 +107,18 @@ class ArrayUtilTest {
         int numberOfNumbers = 3;
         System.out.println("Test - find number of numbers in array");
         if (arrayUtil.findNumberOfNumbers(arrayTest, findNumber) == numberOfNumbers) {
+            System.out.println("Test - OK");
+        } else System.out.println("Test - FAIL");
+    }
+
+    void replaceTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] arrayTest = {1, 2, 3, 4, 5};
+        int changeNumber = 3;
+        int newNumber = 1000;
+        System.out.println("Test - change number");
+        arrayUtil.replace(arrayTest, changeNumber, newNumber);
+        if (arrayTest[2] == newNumber) {
             System.out.println("Test - OK");
         } else System.out.println("Test - FAIL");
     }
