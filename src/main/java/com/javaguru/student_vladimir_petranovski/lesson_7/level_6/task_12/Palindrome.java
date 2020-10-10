@@ -22,15 +22,30 @@ class Palindrome {
         if (text == null) {
             return false;
         }
-        /*StringBuilder stringBuilder = new StringBuilder(text);
+        String str = convertArrayToString(divideStringByArrayWordsWithoutPunctuationMarksAndBlanks(text), text);
+
+        /*StringBuilder stringBuilder = new StringBuilder(str);
         stringBuilder.reverse();
-        return stringBuilder.toString().equals(text);*/
-        //int length = text.length();
-        for (int i = 0; i < text.length() / 2; i++) {
-            if (text.charAt(i) != text.charAt(text.length() - 1 - i)) {
+        return stringBuilder.toString().equals(str);*/
+        //int length = str.length();
+        for (int i = 0; i < str.length() / 2; i++) {
+            if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
                 return false;
             }
         }
         return true;
+    }
+
+    String[] divideStringByArrayWordsWithoutPunctuationMarksAndBlanks(String text) {
+        String[] words = text.toLowerCase().split("[\\p{Punct}\\s]+");
+        return words;
+    }
+
+    String convertArrayToString(String[] array, String text) {
+        String str = new String();
+        for (String s : divideStringByArrayWordsWithoutPunctuationMarksAndBlanks(text)) {
+            str += s;
+        }
+        return str;
     }
 }
