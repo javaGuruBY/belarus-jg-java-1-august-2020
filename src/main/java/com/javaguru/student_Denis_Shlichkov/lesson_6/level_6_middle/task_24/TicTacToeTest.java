@@ -1,13 +1,14 @@
-package lesson_6.level_5_middle.task_23;
+package lesson_6.level_6_middle.task_24;
 
 class TicTacToeTest {
     public static void main(String[] args) {
-        TicTacToeTest test = new TicTacToeTest();
-        test.winHorizontalTest();
-        test.winVerticalsTest();
-        test.isWinPositionForDiagonalsTest();
-        test.isWinPositionTest();
-        test.isDrawPositionTest();
+    TicTacToeTest test = new TicTacToeTest();
+    test.winHorizontalTest();
+    test.winVerticalsTest();
+    test.isWinPositionForDiagonalsTest();
+    test.isWinPositionTest();
+    test.isDrawPositionTest();
+    test.createFieldTest();
     }
 
     void winHorizontalTest(){
@@ -194,5 +195,17 @@ class TicTacToeTest {
         }
         else System.out.println("Test - FAIL");
 
+    }
+
+    void createFieldTest(){
+        TicTacToe ticTacToe = new TicTacToe();
+        int [][] field = ticTacToe.createField();
+        System.out.println("Test Create Field");
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                System.out.print(field[i][j] + " ");
+            }
+            System.out.println("");
+        }
     }
 }
