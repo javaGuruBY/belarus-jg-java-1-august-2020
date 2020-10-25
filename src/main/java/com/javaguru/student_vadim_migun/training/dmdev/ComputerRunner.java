@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.training;
+package com.javaguru.student_vadim_migun.training.dmdev;
 
 class ComputerRunner {
 

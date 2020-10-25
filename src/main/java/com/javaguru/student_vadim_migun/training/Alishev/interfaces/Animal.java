@@ -1,6 +1,7 @@
 package com.javaguru.student_vadim_migun.training.Alishev.interfaces;
 
 class Animal implements Info{
+
     public int id;
 
     public Animal(int id){
