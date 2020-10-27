@@ -23,7 +23,7 @@ class ArrayUtil {
     public int findMaxNumber(int[] array) {
         int maxNumber = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (maxNumber > array[i]) {
+            if (maxNumber <= array[i]) {
                 maxNumber = array[i];
             }
         }
