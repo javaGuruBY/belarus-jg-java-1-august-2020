@@ -29,11 +29,4 @@ class InMemoryDatabase implements Database {
         }
         return null;
     }
-
-    public static void main(String[] args) {
-         InMemoryDatabase inMemoryDatabase = new InMemoryDatabase();
-         inMemoryDatabase.save(new Product("Orange"));
-        System.out.println(inMemoryDatabase.findByTitle("Orange"));
-
-    }
 }
