@@ -146,12 +146,4 @@ class BookReaderImp implements BookReader {
         return str;
     }
 
-    public static void main(String[] args) {
-        Book book = new Book("Tim", "Tom");
-        ElLibrary elLibrary = new ElLibrary();
-        elLibrary.fillLibrary(book);
-        BookReaderImp bookReaderImp = new BookReaderImp(elLibrary);
-        System.out.println(bookReaderImp.isExistBook("Tim", "Tom"));
-        bookReaderImp.printAllBooksInLibrary(book);
-    }
 }
