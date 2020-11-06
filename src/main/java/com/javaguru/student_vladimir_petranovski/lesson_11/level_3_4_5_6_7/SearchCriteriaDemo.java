@@ -4,9 +4,6 @@ import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.bean.
 import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service.BookDatabaseImpl;
 import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service_search.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SearchCriteriaDemo {
     public static void main(String[] args) {
         Book book = new Book("Zveroboi", "Kuper", "1890");
@@ -39,5 +36,6 @@ public class SearchCriteriaDemo {
         }
         SearchCriteria searchTitle = new TitleSearchCriteria("Pushkin");
         System.out.println(bookDatabase.find(searchTitle, 1, 10));
+        System.out.println(bookDatabase.find(searchTitle, 11, 20));
     }
 }
