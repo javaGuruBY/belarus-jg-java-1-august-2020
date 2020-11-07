@@ -1,7 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7;
 
 import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.bean.Book;
-import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service_search.YearOfIssueSearchCriteria;
+import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service.service_search.YearOfIssueSearchCriteria;
 import junit.framework.TestCase;
 
 public class YearOfIssueSearchCriteriaTest extends TestCase {

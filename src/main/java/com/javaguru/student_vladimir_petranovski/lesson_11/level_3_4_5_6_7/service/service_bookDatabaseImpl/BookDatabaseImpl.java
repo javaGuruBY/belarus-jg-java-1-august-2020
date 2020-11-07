@@ -1,11 +1,12 @@
-package com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service;
+package com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service.service_bookDatabaseImpl;
 
-import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service_search.SearchCriteria;
 import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.bean.Book;
+import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service.BookDatabase;
+import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service.SearchCriteria;
 
 import java.util.*;
 
-public class BookDatabaseImpl implements BookDatabase{
+public class BookDatabaseImpl implements BookDatabase {
     private Long uniqueId = 0L;
 
     private final List<Book> database = new ArrayList<>();

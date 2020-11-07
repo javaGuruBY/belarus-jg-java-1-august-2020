@@ -1,9 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7;
 
 import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.bean.Book;
-import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service_search.TitleSearchCriteria;
+import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.service.service_search.TitleSearchCriteria;
 import junit.framework.TestCase;
-import org.junit.Before;
 
 public class TitleSearchCriteriaTest extends TestCase {
     private final TitleSearchCriteria test = new TitleSearchCriteria("Six");
