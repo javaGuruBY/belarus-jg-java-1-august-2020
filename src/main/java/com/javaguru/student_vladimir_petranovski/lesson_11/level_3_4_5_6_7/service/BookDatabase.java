@@ -42,4 +42,6 @@ public interface BookDatabase {
     Map<String, List<Book>> getAuthorToBooksMap();
 
     Map<String, Integer> getEachAuthorBookCount();
+
+    List<Book> find(SearchCriteria searchCriteria, int from, int to);
 }

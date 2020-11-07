@@ -6,13 +6,13 @@ import com.javaguru.student_vladimir_petranovski.lesson_11.level_3_4_5_6_7.bean.
 import java.util.*;
 
 public class BookDatabaseImpl implements BookDatabase{
-    private Long ID = 0L;
+    private Long uniqueId = 0L;
 
     private final List<Book> database = new ArrayList<>();
 
     @Override
     public Long save(Book book) {
-        book.setId(++ID);
+        book.setId(++uniqueId);
         database.add(book);
         return book.getId();
     }
@@ -178,7 +178,7 @@ public class BookDatabaseImpl implements BookDatabase{
         }
         return false;
     }
-
+    @Override
     public List<Book> find(SearchCriteria searchCriteria, int from, int to) {
         List<Book> books = find(searchCriteria);
         List<Book> pagingList = new ArrayList<>();
