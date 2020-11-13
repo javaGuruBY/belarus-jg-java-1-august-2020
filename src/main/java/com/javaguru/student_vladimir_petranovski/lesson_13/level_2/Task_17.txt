@@ -1,0 +1,9 @@
+Почему класс AccessDeniedException в нашем случае
+лучше наследовать от Exception, а не от RuntimeException? // потому что эту ошибку надо обязательно словить и
+                                                             и желательно отправить сообщение об этом клиенту.
+                                                             RuntimeException ошибки надо обязательно исправлять
+                                                             в коде а не ловить!
+
+class AccessDeniedException extends Exception {
+
+}
