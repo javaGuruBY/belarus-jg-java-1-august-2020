@@ -2,9 +2,8 @@ package com.javaguru.student_vladimir_petranovski.lesson_13.level_6.rules_for_va
 
 import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.domain.Product;
 import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.exceptions.ValidationException;
-import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.util.CheckForForbiddenCharsUtil;
-
-import java.util.regex.Pattern;
+import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.util.CheckForInvalidChars;
+import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.util.TransformationTextInExpression;
 
 public class ProductNameProductValidationRule implements FieldValidationRule {
     @Override
@@ -30,7 +29,7 @@ public class ProductNameProductValidationRule implements FieldValidationRule {
                     nameDescription);
         }
 
-        if (CheckForForbiddenCharsUtil.check(product.getNameProduct())) {
+        if (CheckForInvalidChars.check(TransformationTextInExpression.findExpression(product.getNameProduct()))) {
             throw new ValidationException(ruleName,
                     String.valueOf(Rules.RULE_4_NAME_MUST_CONTAIN_ONLY_ENGLISH_LETTERS_AND_NUMBERS),
                             nameDescription);
