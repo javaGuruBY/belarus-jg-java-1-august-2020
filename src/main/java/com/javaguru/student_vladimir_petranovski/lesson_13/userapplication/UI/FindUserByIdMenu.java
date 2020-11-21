@@ -1,6 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.UI;
 
 import com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.domain.User;
+import com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.exception.UserNotFoundException;
 import com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.service.UserService;
 
 import java.util.Scanner;

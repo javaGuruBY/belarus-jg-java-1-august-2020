@@ -28,6 +28,7 @@ public class CreateUserMenu implements UserMenu {
         User createdUser = userService.saveUser(user);
         System.out.println("User created successfully!");
         System.out.println("User details: " + createdUser);
+
     }
 
     @Override

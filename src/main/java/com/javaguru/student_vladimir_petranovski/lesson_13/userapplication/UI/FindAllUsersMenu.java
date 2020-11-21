@@ -17,9 +17,11 @@ public class FindAllUsersMenu implements UserMenu {
     public void execute() {
         List<User> users = userService.findAllUsers();
         System.out.println("Users: ");
-        for (User user : users) {
-            System.out.println(user);
-        }
+//        for (User user : users) {
+//            System.out.println(user);
+//        }
+//        users.forEach(user -> System.out.println(user));
+        users.forEach(System.out::println);
 
     }
 
