@@ -4,7 +4,7 @@ import com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.domai
 import com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.domain.UserConstance;
 import com.javaguru.student_vladimir_petranovski.lesson_13.userapplication.exception.UserValidationException;
 
-class UserValidationService {
+public class UserValidationService {
 
     void validate(User user) {
 //        if (user == null) {
@@ -60,7 +60,7 @@ class UserValidationService {
 //        }
 //    }
     private void checkUserAgeMinAndMax(User user) {
-        if (user.getAge() < UserConstance.MIN_AGE) {
+        if (user.getAge() <= UserConstance.MIN_AGE) {
             throw new UserValidationException(String.format("User age must be more %s", UserConstance.MIN_AGE));
         }
         if (user.getAge() > UserConstance.MAX_AGE) {
