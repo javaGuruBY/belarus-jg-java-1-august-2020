@@ -1,5 +1,6 @@
 package com.javaguru.student_vladimir_petranovski.lesson_14.level_1.bean;
 
+import com.javaguru.student_vladimir_petranovski.lesson_14.level_2.bean.Apple;
 import junit.framework.TestCase;
 import org.junit.Before;
 
