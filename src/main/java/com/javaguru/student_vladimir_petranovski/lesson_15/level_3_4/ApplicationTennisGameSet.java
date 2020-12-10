@@ -1,7 +1,7 @@
-package com.javaguru.student_vladimir_petranovski.lesson_15.level_3;
+package com.javaguru.student_vladimir_petranovski.lesson_15.level_3_4;
 
-import com.javaguru.student_vladimir_petranovski.lesson_15.level_3.bean.Tennis;
-import com.javaguru.student_vladimir_petranovski.lesson_15.level_3.service.TennisGameImpl;
+import com.javaguru.student_vladimir_petranovski.lesson_15.level_3_4.bean.Tennis;
+import com.javaguru.student_vladimir_petranovski.lesson_15.level_3_4.service.TennisGameImpl;
 
 class ApplicationTennisGameSet {
 
